@@ -1,0 +1,91 @@
+.logo {
+    display: inline-block;
+    margin-right: 50px;
+}
+.navigation {
+    display: inline-block;
+}
+.nav-li {
+    display: inline-block;
+}
+.header-wraper {
+    background-color: aqua;
+    padding: 30px;
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    z-index: 50;
+}
+body {
+    height: 1800px;
+    /* padding-top: 76px; */
+}
+
+
+/* section#2 */
+.section-about {
+    margin-top: 76px;
+}
+.wraper {
+    width: 600px;
+    height: 600px;
+    background-color: blue;
+    position: relative;
+
+    /* transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    transition-delay: 2s; */
+    transition: all 5s linear 2s;
+}
+.child-box {
+    width: 150px;
+    height: 150px;
+    background-color: coral;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+    transition: all 5s linear;
+}
+
+/* hover effects */
+.wraper:hover {
+    background: linear-gradient(90deg, rgba(131,58,180,1) 20%, rgba(33,214,105,1) 43%, rgba(37,120,70,1) 69%);
+    
+}
+.child-box:hover {
+    background-color: darkgrey;
+    transform: translate(-50%,-50%) rotate(0deg);
+}
+/* .wraper:hover .child-box {
+    background-color:darkseagreen;
+} */
+
+/* keyframes animation */
+.icon-animation {
+    height: 100px;
+    animation: chatanimationnew 5s infinite 3s alternate;
+    /* position: absolute; */
+}
+.animation-box {
+    /* position: relative; */
+}
+
+/* keyframe */
+/* @keyframes chatanimation {
+    0% {left: 0px; transform: rotate(0deg);}
+    25% {left: 200px;  transform: rotate(360deg);}
+    50% {left: 400px;  transform: rotate(45deg);}
+    75% {left: 600px;  transform: rotate(360deg);}
+    100% {left: 1000px;  transform: rotate(45deg); }
+} */
+
+@keyframes chatanimationnew {
+    0% { transform: translateX(0px) rotate(0deg);}
+    25% { transform: translateX(200px) rotate(360deg);}
+    50% { transform: translateX(400px) rotate(45deg);}
+    75% { transform: translateX(600px) rotate(360deg);}
+    100% { transform: translateX(1000px) rotate(45deg); }
+}
